@@ -77,6 +77,7 @@ console.log(newWordString);
   const inputArray = [1,3,5,2,10,6,4,9];
   const outputArray = [];
   const filterPair = false;
+  const divisorNUmber = 5;
 
   // inputArray.forEach((element)=>{
   //   if(element%2 === 0){
@@ -86,17 +87,25 @@ console.log(newWordString);
 
   // ARRAY MEDIO
 
+  // inputArray.forEach((element)=>{
+  //   let controlNumber = 0;
+  //   if(filterPair === false){
+  //     controlNumber = 1;
+  //   }
+  //     if(element%2 === controlNumber){
+  //       outputArray.push(element);
+  //     }
+  //   })
+
+  // ARRAY MEDIO 2
+
   inputArray.forEach((element)=>{
-    let controlNumber = 0;
-    if(filterPair === false){
-      controlNumber = 1;
+    
+    if(element%divisorNUmber === 0){
+      outputArray.push(element);
     }
-      if(element%2 === controlNumber){
-        outputArray.push(element);
-      }
     })
 
 
-
-  console.log(outputArray);
+console.log(outputArray);
 
