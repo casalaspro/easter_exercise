@@ -1,4 +1,4 @@
-console.log("Hapy Easter!");
+console.log("Happy Easter!");
 
 // CIFRARIO
 
@@ -6,33 +6,33 @@ console.log("Hapy Easter!");
   // per ogni vocale intercettata uniamo la stringa f e ripetiamo la vocale stessa
   // reintroduciamo all'interno della stringa la stringa generata
 
-const word = "marco";
-let newWordArray = [];
-const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+// const word = "marco";
+// let newWordArray = [];
+// const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
-function isVowel(letter){
-  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
-  let response = false;
-  for(let i=0; i<vowels.length; i++){
-    if(letter === vowels[i]){
-      response = true;
-    }
-  }
-  return response;
-}
+// function isVowel(letter){
+//   const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+//   let response = false;
+//   for(let i=0; i<vowels.length; i++){
+//     if(letter === vowels[i]){
+//       response = true;
+//     }
+//   }
+//   return response;
+// }
 
-for(let i=0; i<word.length; i++){
-  if(isVowel(word[i])){
-    const newString = word[i] + "f" + word[i];
-    newWordArray.push(newString);
-  }else{
-    newWordArray.push(word[i]);
-  }
-}
+// for(let i=0; i<word.length; i++){
+//   if(isVowel(word[i])){
+//     const newString = word[i] + "f" + word[i];
+//     newWordArray.push(newString);
+//   }else{
+//     newWordArray.push(word[i]);
+//   }
+// }
 
-const newWordString = newWordArray.join("");
+// const newWordString = newWordArray.join("");
 
-console.log(newWordString);
+// console.log(newWordString);
 
 // STRINGA "INFINITA"
 
@@ -74,38 +74,67 @@ console.log(newWordString);
 
   // ARRAY FACILE
 
-  const inputArray = [1,3,5,2,10,6,4,9];
-  const outputArray = [];
-  const filterPair = false;
-  const divisorNUmber = 5;
+//   const inputArray = [1,3,5,2,10,6,4,9];
+//   const outputArray = [];
+//   const filterPair = false;
+//   const divisorNUmber = 5;
 
-  // inputArray.forEach((element)=>{
-  //   if(element%2 === 0){
-  //     outputArray.push(element);
-  //   }
-  // })
+//   // inputArray.forEach((element)=>{
+//   //   if(element%2 === 0){
+//   //     outputArray.push(element);
+//   //   }
+//   // })
 
-  // ARRAY MEDIO
+//   // ARRAY MEDIO
 
-  // inputArray.forEach((element)=>{
-  //   let controlNumber = 0;
-  //   if(filterPair === false){
-  //     controlNumber = 1;
-  //   }
-  //     if(element%2 === controlNumber){
-  //       outputArray.push(element);
-  //     }
-  //   })
+//   // inputArray.forEach((element)=>{
+//   //   let controlNumber = 0;
+//   //   if(filterPair === false){
+//   //     controlNumber = 1;
+//   //   }
+//   //     if(element%2 === controlNumber){
+//   //       outputArray.push(element);
+//   //     }
+//   //   })
 
-  // ARRAY MEDIO 2
+//   // ARRAY MEDIO 2
 
-  inputArray.forEach((element)=>{
+//   inputArray.forEach((element)=>{
     
-    if(element%divisorNUmber === 0){
-      outputArray.push(element);
+//     if(element%divisorNUmber === 0){
+//       outputArray.push(element);
+//     }
+//     })
+
+
+// console.log(outputArray);
+
+// ARRAY DIFFICILE
+
+let object = [
+	{ name: "Marco", age: 22 },
+	{ name: "Anna", age: 24 },
+	{ name: "Luca", age: 17 },
+	{ name: "Gianni", age: 53 }
+];
+
+
+let continueCycle = true;
+
+while(continueCycle){
+
+  continueCycle = false;
+
+  for(let i = 0; i<object.length-1; i++){
+    
+    if(object[i].age > object[i+1].age){
+      const temp = object[i];
+      object[i] = object[i+1];
+      object[i+1] = temp;
+      console.log("Ho effettuato uno scambio");
+      continueCycle = true;
     }
-    })
+  }
+}
 
-
-console.log(outputArray);
-
+console.log(object);
