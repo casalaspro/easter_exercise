@@ -33,3 +33,16 @@ for(let i=0; i<word.length; i++){
 const newWordString = newWordArray.join("");
 
 console.log(newWordString);
+
+// STRINGA "INFINITA"
+
+// creare una funzione che accetti i due estremi della stringa che ci interessa
+  // scoprire a cosa equivale la partenza
+  // scoprire a cosa equivale la fine
+  // scoprire quante volte ciclare l'array
+  // stampare il risultato
+
+  const infiniteString = "ABCDE";
+
+  const firstNumber = 13;
+  const secondNUmber = 16;
