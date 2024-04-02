@@ -36,38 +36,51 @@ console.log(newWordString);
 
 // STRINGA "INFINITA"
 
-// creare una funzione che accetti i due estremi della stringa che ci interessa
-  // scoprire a cosa equivale la partenza
-  // scoprire a cosa equivale la fine
-  // scoprire quante volte ciclare l'array
-  // stampare il risultato
+// // creare una funzione che accetti i due estremi della stringa che ci interessa
+//   // scoprire a cosa equivale la partenza
+//   // scoprire a cosa equivale la fine
+//   // scoprire quante volte ciclare l'array
+//   // stampare il risultato
 
-  const infiniteString = "ABCDE";
+//   const infiniteString = "ABCDE";
 
-  const firstNumber = 13;
-  const secondNumber = 16;
+//   const firstNumber = 13;
+//   const secondNumber = 16;
 
-  const stringArray = [];
+//   const stringArray = [];
 
-  const firstLetter = infiniteString[Math.floor(firstNumber/infiniteString.length)+(firstNumber%infiniteString.length) -2];
+//   const firstLetter = infiniteString[Math.floor(firstNumber/infiniteString.length)+(firstNumber%infiniteString.length) -2];
 
-  let indice = Math.floor(firstNumber/infiniteString.length)+(firstNumber%infiniteString.length) -2;
+//   let indice = Math.floor(firstNumber/infiniteString.length)+(firstNumber%infiniteString.length) -2;
 
-  console.log(indice);
+//   console.log(indice);
 
-  for(let i = firstNumber; i<=secondNumber; i++){
-    if(indice<infiniteString.length -1){
-      stringArray.push(infiniteString[indice]);
-      console.log("indice nel range")
-      console.log(stringArray);
-      indice++
-    }else if(indice === infiniteString.length -1){
-      stringArray.push(infiniteString[indice]);
-      indice = 0;
-      console.log("reset indice");
+//   for(let i = firstNumber; i<=secondNumber; i++){
+//     if(indice<infiniteString.length -1){
+//       stringArray.push(infiniteString[indice]);
+//       console.log("indice nel range")
+//       console.log(stringArray);
+//       indice++
+//     }else if(indice === infiniteString.length -1){
+//       stringArray.push(infiniteString[indice]);
+//       indice = 0;
+//       console.log("reset indice");
+//     }
+//   }
+
+//   const stringResult = stringArray.join("");
+
+//   console.log(stringResult);
+
+  // ARRAY FACILE
+
+  const inputArray = [1,3,5,2,10,6,4,9];
+  const outputArray = [];
+
+  inputArray.forEach((element)=>{
+    if(element%2 === 0){
+      outputArray.push(element);
     }
-  }
+  })
 
-  const stringResult = stringArray.join("");
-
-  console.log(stringResult);
+  console.log(outputArray);
