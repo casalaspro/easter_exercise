@@ -45,4 +45,29 @@ console.log(newWordString);
   const infiniteString = "ABCDE";
 
   const firstNumber = 13;
-  const secondNUmber = 16;
+  const secondNumber = 16;
+
+  const stringArray = [];
+
+  const firstLetter = infiniteString[Math.floor(firstNumber/infiniteString.length)+(firstNumber%infiniteString.length) -2];
+
+  let indice = Math.floor(firstNumber/infiniteString.length)+(firstNumber%infiniteString.length) -2;
+
+  console.log(indice);
+
+  for(let i = firstNumber; i<=secondNumber; i++){
+    if(indice<infiniteString.length -1){
+      stringArray.push(infiniteString[indice]);
+      console.log("indice nel range")
+      console.log(stringArray);
+      indice++
+    }else if(indice === infiniteString.length -1){
+      stringArray.push(infiniteString[indice]);
+      indice = 0;
+      console.log("reset indice");
+    }
+  }
+
+  const stringResult = stringArray.join("");
+
+  console.log(stringResult);
