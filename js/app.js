@@ -111,30 +111,47 @@ console.log("Happy Easter!");
 
 // ARRAY DIFFICILE
 
-let object = [
-	{ name: "Marco", age: 22 },
-	{ name: "Anna", age: 24 },
-	{ name: "Luca", age: 17 },
-	{ name: "Gianni", age: 53 }
-];
+// let object = [
+// 	{ name: "Marco", age: 22 },
+// 	{ name: "Anna", age: 24 },
+// 	{ name: "Luca", age: 17 },
+// 	{ name: "Gianni", age: 53 }
+// ];
 
 
-let continueCycle = true;
+// let continueCycle = true;
 
-while(continueCycle){
+// while(continueCycle){
 
-  continueCycle = false;
+//   continueCycle = false;
 
-  for(let i = 0; i<object.length-1; i++){
+//   for(let i = 0; i<object.length-1; i++){
     
-    if(object[i].age > object[i+1].age){
-      const temp = object[i];
-      object[i] = object[i+1];
-      object[i+1] = temp;
-      console.log("Ho effettuato uno scambio");
-      continueCycle = true;
-    }
-  }
-}
+//     if(object[i].age > object[i+1].age){
+//       const temp = object[i];
+//       object[i] = object[i+1];
+//       object[i+1] = temp;
+//       console.log("Ho effettuato uno scambio");
+//       continueCycle = true;
+//     }
+//   }
+// }
 
-console.log(object);
+// console.log(object);
+
+// SHERLOCK - Snack 1
+
+// SHERLOCK - Snack 2
+
+// function sherlock2(number, string){
+//   if(number%2 ===0){
+//     return string;
+//   }else{
+//     let reversed = string.split('').reverse().join('');
+//     return reversed;
+//   }
+// }
+
+// console.log(sherlock2(123, "Vue"));
+
+// SHERLOCK - Snack 3

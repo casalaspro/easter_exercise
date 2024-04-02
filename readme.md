@@ -85,4 +85,66 @@ array = [
 // ]
 ```
 
+## **Sherlock Snack - Difficile**
 
+*La sfida di questi snack è che non è presente nessuna traccia da seguire. Avrete come esempi solo i dati di INPUT e di OUTPUT che dovrete gestire nelle vostre funzioni.
+Prima di scrivere il codice assicuratevi di comprendere bene la relazione fra INPUT e OUTPUT.*
+
+### Snack 1
+
+INPUT: `[1,2,3,4,5,6,7]` 
+OUTPUT: `14` 
+
+INPUT: `[5,10,15,20]` 
+OUTPUT: `25` 
+
+INPUT: `[10,10]` 
+OUTPUT: `10`
+
+### Snack 2
+
+INPUT: `1, "Ciao"` 
+OUTPUT: `"oaiC"` 
+
+INPUT: `26, "Test"` 
+OUTPUT: `"Test"` 
+
+INPUT: `117, "Vue"` 
+OUTPUT: `"euV"`
+
+*NOTA: i parametri in ingresso per la funzione sono 2*
+
+### Snack 3
+
+INPUT: `"cane","gatto"` 
+OUTPUT: `"a"` 
+
+INPUT: `"troppo", "poco"` 
+OUTPUT: `""` 
+
+INPUT: `"sempre", "mamp"` 
+OUTPUT: `"mp"`
+
+*NOTA: i parametri in ingresso per la funzione sono 2*
+
+### Snack 4
+
+INPUT: `"maammmmp"` 
+OUTPUT: `"mamp"` 
+
+INPUT: `"ciaooooooooo"` 
+OUTPUT: `"ciao"` 
+
+INPUT: `"ppppprrrrrrrrroovvvvvvvaaaaaaaaaaaaa"` 
+OUTPU: `"prova"`
+
+### Snack 4 - Difficile
+
+INPUT: `"maammmmp"` 
+OUTPUT: `"ma2m4p"` 
+
+INPUT: `"ciaooooooooo"` 
+OUTPUT: `"ciao9"` 
+
+INPUT: `"ppppprrrrrrrrroovvvvvvvaaaaaaaaaaaaa"` 
+OUTPU: `"p5r9o2v7a13"`
