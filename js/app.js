@@ -1,5 +1,7 @@
 console.log("Hapy Easter!");
 
+// CIFRARIO
+
 // ciclare la parola
   // per ogni vocale intercettata uniamo la stringa f e ripetiamo la vocale stessa
   // reintroduciamo all'interno della stringa la stringa generata
